@@ -1,0 +1,339 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilização de listas não ordenadas */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para links em listas */
+ul li a {
+    text-decoration: none;
+}
+
+/* Configuração padrão para imagens dentro de divs */
+div img {
+    display: block;
+    width: 100%;
+}
+
+/* Classe base para containers flexíveis */
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #122A57;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+/* Menu de navegação */
+header .list-items {
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Links do menu */
+.list-items li a {
+    color: #fff;
+}
+
+/* Alinhamento do menu */
+header .menu {
+    justify-content: space-between;
+}
+
+/* Seção de apresentação principal */
+.apresentacao {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Texto da seção de apresentação */
+.apresentacao .texto-apresentacao {
+    min-height: 200px;
+}
+
+/* Título principal */
+.texto-apresentacao h1 {
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Estilo base para botões */
+.btn {
+    background-color: #122A57;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+/* Seção "Quem Somos" */
+#quem-somos {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Título da seção */
+#quem-somos h2 {
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+}
+
+/* Elemento decorativo antes do título */
+#quem-somos h2::before {
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: relative;
+}
+
+/* Parágrafos da seção */
+#quem-somos p {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+/* Imagem da seção */
+#quem-somos img {
+   min-width: 420px;
+}
+
+/* Container externo para a seção de serviços */
+.container_externo {
+    background-color: #122A57;
+    width: 100%;
+}
+
+/* Seção de Serviços */
+#servicos {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/* Título da seção */
+#servicos h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Lista de serviços */
+.list-servicos {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Itens individuais de serviço */
+.list-servico .item-servico {
+    text-align: center;
+}
+
+/* Botões de serviço */
+.item-servico a {
+    width: 220px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+    color: #122A57;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Texto dos serviços */
+.item-servico p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Imagens dos serviços */
+.item-servico img {
+    width: 80%;
+    margin: auto;
+}
+
+/* Seção de Planos */
+#planos {
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+/* Título da seção */
+#planos h2 {
+    font-size: 32px;
+}
+
+/* Lista de planos */
+.list-planos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* Itens individuais de planos */
+.item-planos {
+    flex: 1;
+    border: 5px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+
+/* Botões nos planos */
+.item-planos .btn {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Títulos dos planos */
+.item-planos h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Elemento decorativo após o título */
+.item-planos h3::after {
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Lista de benefícios */
+.item-planos ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Itens da lista */
+.item-plano li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Marcadores personalizados */
+.item-plano ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 5px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #122A57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+/* Conteúdo do rodapé */
+footer .footer {
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* ==================== */
+/* MEDIA QUERIES - MOBILE */
+/* ==================== */
+
+@media (max-width: 992px) {
+    /* Layout em coluna para mobile */
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    /* Ajuste da seção de apresentação */
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+    
+    /* Texto ocupando toda a largura */
+    .apresentacao .texto-apresentacao {
+        width: 100%;
+    }
+
+    /* Inversão da ordem na seção "Quem Somos" */
+    #quem-somos {
+        flex-direction: column-reverse;
+    }
+
+    /* Ajuste da imagem */
+    #quem-somos img {
+        min-width: 320px;
+        margin: auto;
+    }
+
+    /* Serviços em coluna */
+    .list-servico {
+        flex-direction: column;
+    }
+
+    /* Redimensionamento das imagens */
+    .item-servico img {
+        width: 50%;
+        margin: auto;
+    }
+
+    /* Ajuste dos planos para mobile */
+    .list-planos {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    
+    /* Itens de plano ocupando quase toda a largura */
+    .list-planos .item-planos {
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
